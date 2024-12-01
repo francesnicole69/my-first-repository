@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="Nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-top"></span> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple">Apple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mac.html" class="nav-link nav-link-bag">Mac</a>
+                    </li>
+                </ul>
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mac.html" class="nav-link">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iphone.html" class="nav-link">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tv&home.html" class="nav-link">TV & Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entertainment.html" class="nav-link">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="search.html" class="nav-link nav-link-search"></a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="mac-showcase">
+        <div class="mac-header">
+            <div class="mac-title">
+                <h1>Mac</h1>
+            </div>
+            <div class="mac-tagline">
+                <h2>If you can dream it,<br>Mac can do it.</h2>
+            </div>
+        </div>
+        <div class="mac-video">
+            <video autoplay muted loop id="mac-video">
+                <source src="xlarge_2x.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
+    <section class="lineup">
+        <div class="lineup-header">
+            <h2>Explore the Line-up</h2>
+        </div>
+        <div class="lineup-options">
+            <button class="option-btn" id="laptop" onclick="laptop()">Laptop</button>
+            <button class="option-btn" id="desktop" onclick="desktop()">Desktop</button>
+            <button class="option-btn" id="display" onclick="display()">Display</button>
+        </div>
+        <div class="lineup-images">
+
+            <img id="image-display" src="product_tile_mbp_14_16__bkl8zusnkpw2_large.png" alt="Laptop" />
+            <div id="description" class="product-description">
+                <p>MacBook Pro 14″ and 16″<br> M4, M4 Pro or M4 Max chip. The most advanced Mac laptops for demanding workflows.<br> From S$2,199</p>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"></script>    
+</body>
+</html>
+    

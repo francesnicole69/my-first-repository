@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Where should we send your order?</h1>
+        <p>Enter your name and address:</p>
+
+        <form id="order-form" action="payment.html" method="GET">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Bldg no./Name and Street</label>
+                <input type="text" id="address" name="address" placeholder="Bldg no./Name and Street" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apartment">Apartment or Suite (Optional)</label>
+                <input type="text" id="apartment" name="apartment" placeholder="Apartment or Suite (Optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="postal-code">Postal Code</label>
+                <input type="number" id="postal-code" name="postal-code" placeholder="Postal Code" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country-region">Country/Region</label>
+                <div class="country-region">Singapore</div>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="business-address" name="business-address">
+                <label for="business-address">This is a business address</label>
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="button-link">Continue to Payment</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>

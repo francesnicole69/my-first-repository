@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Checkout</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Checkout</h1>
+        </div>
+    </header>
+    <main>
+        <div class="checkout-container">
+            <div class="payment-section">
+                <h1>Pay in Full</h1>
+                <div class="payment-method"></div>
+            </div>
+
+            <form id="payment-form" action="successful.html" method="GET">
+                <div class="form-group">
+                    <label for="card-number">Credit/Debit Card Number</label>
+                    <input type="text" id="card-number" placeholder="Credit/Debit Card Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiry">Expiration MM/YY</label>
+                    <input type="text" id="expiry" placeholder="MM/YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="CVV" required>
+                </div>
+
+                <div class="review-order">
+                    <button type="submit" id="review-order-button">Pay</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

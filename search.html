@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title>
+    <link rel="stylesheet" href="search.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container0">
+            <nav class="nav0">
+                <ul class="nav-list0">
+                    <li class="nav-item0"><a href="index.html" class="nav-link nav-link-apple"></a></li>
+                    <li class="nav-item0"><a href="mac.html" class="nav-link0">Mac</a></li>
+                    <li class="nav-item0"><a href="iphone.html" class="nav-link0">iPhone</a></li>
+                    <li class="nav-item0"><a href="tv&home.html" class="nav-link0">TV & Home</a></li>
+                    <li class="nav-item0"><a href="entertainment.html" class="nav-link0">Entertainment</a></li>
+                    <li class="nav-item0"><a href="search.html" class="nav-link nav-link-search"></a></li>
+                    <li class="nav-item0 nav-item-hidden">
+                        <a href="#" class="nav-link nav-link-bag icon-cart">
+                            <span id="cart-counter">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search Apple products...">
+            </div>
+        </div>
+    </header>
+
+    <section class="lineup">
+        <div class="flex-container3">
+            <div class="flex-item3" data-id="1" data-name="iPhone 16 Pro" data-price="1899">
+                <img src="iphone_16pro__erw9alves2qa_xlarge.png" alt="iPhone 16 Pro" class="product-image2">
+                <h3>iPhone 16 Pro</h3>
+                <p>The latest iPhone with advanced features.<br> Starting at S$1,899.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <div class="flex-item3" data-id="2" data-name="Home Pod" data-price="1799">
+                <img src="room_filling_sound__zagu3551kwyi_large.jpg" alt="Home Pod" class="product-image2">
+                <h3>Home Pod</h3>
+                <p>Surprising for its size.<br> Starting at S$1,799.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <div class="flex-item3" data-id="3" data-name="MacBook Pro" data-price="2199">
+                <img src="mbp14-spaceblack-cto-hero-202410.jpeg" alt="MacBook Pro" class="product-image2">
+                <h3>MacBook Pro</h3>
+                <p>All-day battery and sleek design.<br> Starting at S$2,199.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <div class="flex-item3" data-id="4" data-name="Apple TV" data-price="202.7">
+                <img src="hero__dbphk49ymi2q_large (1).jpg" alt="Apple TV" class="product-image2">
+                <h3>Apple TV</h3>
+                <p>Reliable performance.<br> Starting at S$202.7.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <div class="flex-item3" data-id="5" data-name="iMac" data-price="2199">
+                <img src="imac_m4_chip_2-port_24-in_blue_pdp_image_position_1__sgmy-en.jpg" alt="iMac" class="product-image2">
+                <h3>iMac</h3>
+                <p>Vibrant display, ultra-fast performance.<br> Starting at S$2,199.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <div class="flex-item3" data-id="6" data-name="iMac Display" data-price="5999">
+                <img src="studio-display-gallery-1-202203.jpeg" alt="iMac Display" class="product-image2">
+                <h3>iMac Display</h3>
+                <p>Retina 6K display for professional workflows.<br> Starting at S$5,999.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="flex-item3" data-id="7" data-name="iPhone 16" data-price="1099">
+                <img src="iphone_16__c5bvots96jee_xlarge.png" alt="iPhone 16" class="product-image2">
+                <h3>iPhone 16</h3>
+                <p>Pro-level performance and cameras.<br> Starting at S$1,099.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Product 8 -->
+            <div class="flex-item3" data-id="8" data-name="iPhone 15" data-price="1099">
+                <img src="iphone_15__buwagff0mwwi_xlarge.png" alt="iPhone 15" class="product-image2">
+                <h3>iPhone 15</h3>
+                <p>All-day battery and sleek design.<br> Starting at S$1,099.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Product 9 -->
+            <div class="flex-item3" data-id="9" data-name="iPhone 14" data-price="699">
+                <img src="iphone_14__eso1fig4ci6a_xlarge.png" alt="iPhone 14" class="product-image2">
+                <h3>iPhone 14</h3>
+                <p>Compact and powerful.<br> Starting at S$699.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Product 10 -->
+            <div class="flex-item3" data-id="10" data-name="Smart Thermostat" data-price="79.99">
+                <img src="lighting__bwpnaru6q1w2_large.jpg" alt="Smart Thermostat" class="product-image2">
+                <h3>Smart Thermostat</h3>
+                <p>Control the vibe.<br> Starting at S$79.99.</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="totalAmount">
+            <span>Total:</span>
+            <span id="cart-total">S$0.00</span>
+        </div>
+        <div class="btn">
+            <button class="close">Close Cart</button>
+            <a href="checkout.html" class="checkout">Checkout</a>
+
+        </div>
+    </div>
+    
+</body>
+</html>
